@@ -12,8 +12,6 @@ class Prefs {
 
   static Future init() async {
     _preferences = await SharedPreferences.getInstance();
-    print(getUsers());
-    _preferences.clear();
   }
 
   static _setString(String key, String? value) {
